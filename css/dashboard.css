@@ -1,0 +1,449 @@
+/* =====================================
+   DASHBOARD PAGE
+   ===================================== */
+
+
+/* ---------- GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================
+   NAVBAR
+   ===================================== */
+
+.dashboard-navbar {
+    min-height: 75px;
+    padding: 10px 30px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-navbar .navbar-brand img {
+    width: 120px;
+}
+
+.dashboard-navbar .nav-link {
+    color: #777;
+    font-size: 16px;
+    padding: 8px 15px;
+}
+
+.dashboard-navbar .nav-link:hover {
+    color: #4fc3c3;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.nav-divider {
+    height: 25px;
+    width: 1px;
+    background-color: #ddd;
+    margin: 0 8px;
+}
+
+
+/* =====================================
+   PROFILE SECTION
+   ===================================== */
+
+.profile-section {
+    padding: 55px 0 60px;
+    background-color: #fff;
+}
+
+.section-heading {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+
+/* ---------- Profile Container ---------- */
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1000px;
+}
+
+
+/* ---------- Profile Image ---------- */
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+
+    border: 1px solid #ddd;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    margin-right: 55px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ---------- Profile Information ---------- */
+
+.profile-info h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 7px;
+}
+
+
+/* ---------- Edit Profile ---------- */
+
+.edit-profile {
+    margin-left: auto;
+}
+
+.edit-profile a {
+    color: #555;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.edit-profile a:hover {
+    color: #4fc3c3;
+}
+
+
+/* =====================================
+   INTERESTED PROPERTIES
+   ===================================== */
+
+.properties-section {
+    background-color: #faf9f5;
+    padding: 55px 0 65px;
+}
+
+
+/* ---------- Property Card ---------- */
+
+.property-card {
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 230px;
+
+    padding: 20px;
+
+    border-radius: 4px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+
+    position: relative;
+}
+
+
+/* ---------- Property Image ---------- */
+
+.property-image {
+    width: 285px;
+    height: 190px;
+    flex-shrink: 0;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ---------- Property Details ---------- */
+
+.property-details {
+    padding: 0 30px;
+    flex: 1;
+}
+
+.property-rating {
+    color: #f44336;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.property-details h3 {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.property-address {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.property-gender {
+    font-size: 20px;
+    color: #4fc3c3;
+    margin-bottom: 10px;
+}
+
+.property-rent {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.property-rent strong {
+    font-size: 22px;
+    color: #222;
+}
+
+.property-rent span {
+    color: #888;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   PROPERTY INTEREST
+   ===================================== */
+
+.property-interest {
+    width: 110px;
+    text-align: center;
+    align-self: flex-start;
+    padding-top: 5px;
+}
+
+.heart {
+    color: #e74c3c;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.property-interest p {
+    color: #666;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+/* =====================================
+   VIEW BUTTON
+   ===================================== */
+
+.property-action {
+    width: 160px;
+    align-self: flex-end;
+}
+
+.view-btn {
+    width: 100%;
+    padding: 11px 20px;
+
+    background-color: #4fc3c3;
+    color: #fff;
+
+    border-radius: 0;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.view-btn:hover {
+    background-color: #3db1b1;
+    color: #fff;
+}
+
+
+/* =====================================
+   FOOTER
+   ===================================== */
+
+.dashboard-footer {
+    background-color: #292929;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #ddd;
+    font-size: 15px;
+}
+
+.footer-links a:hover {
+    color: #4fc3c3;
+}
+
+.dashboard-footer p {
+    color: #999;
+    font-size: 13px;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+
+/* =====================================
+   RESPONSIVE
+   ===================================== */
+
+@media (max-width: 992px) {
+
+    .property-card {
+        flex-wrap: wrap;
+    }
+
+    .property-details {
+        padding: 10px 20px;
+    }
+
+    .property-interest {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .property-action {
+        width: 150px;
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .dashboard-navbar {
+        padding: 10px 15px;
+    }
+
+    .nav-divider {
+        display: none;
+    }
+
+    .profile-section,
+    .properties-section {
+        padding: 40px 15px;
+    }
+
+    .section-heading {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .edit-profile {
+        margin: 15px 0 0;
+    }
+
+    .property-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .property-image {
+        width: 100%;
+        height: 220px;
+    }
+
+    .property-details {
+        padding: 20px 5px;
+    }
+
+    .property-interest {
+        top: 235px;
+        right: 15px;
+    }
+
+    .property-action {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .footer-links {
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .section-heading {
+        font-size: 27px;
+    }
+
+    .property-image {
+        height: 190px;
+    }
+
+    .property-details h3 {
+        font-size: 20px;
+    }
+
+    .property-interest {
+        top: 205px;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+}

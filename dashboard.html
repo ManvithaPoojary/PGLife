@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | PG Life</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg bg-white dashboard-navbar">
+
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="PG Life Logo">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#dashboardNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse justify-content-end"
+                 id="dashboardNav">
+
+                <ul class="navbar-nav align-items-center">
+
+                    <li class="nav-item">
+                        <span class="user-name">
+                            Hi, User
+                        </span>
+                    </li>
+
+                    <li class="nav-item nav-divider"></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">
+                            <i class="bi bi-person"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-divider"></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-box-arrow-right"></i>
+                            Logout
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= PROFILE SECTION ================= -->
+
+    <section class="profile-section">
+
+        <div class="container">
+
+            <h1 class="section-heading">
+                My Profile
+            </h1>
+
+            <div class="profile-container">
+
+                <!-- Profile Image -->
+
+                <div class="profile-image">
+
+                    <img src="img/profile.png"
+                         alt="Profile">
+
+                </div>
+
+
+                <!-- Profile Information -->
+
+                <div class="profile-info">
+
+                    <h3>
+                        Your Name
+                    </h3>
+
+                    <p>
+                        your.email@gmail.com
+                    </p>
+
+                    <p>
+                        Computer Science & Engineering
+                    </p>
+
+                    <p>
+                        Canara Engineering College
+                    </p>
+
+                </div>
+
+
+                <!-- Edit Profile -->
+
+                <div class="edit-profile">
+
+                    <a href="#">
+                        Edit Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTERESTED PROPERTIES ================= -->
+
+    <section class="properties-section">
+
+        <div class="container">
+
+            <h1 class="section-heading">
+                My Interested Properties
+            </h1>
+
+
+            <!-- Property Card -->
+
+            <div class="property-card">
+
+                <!-- Property Image -->
+
+                <div class="property-image">
+
+                    <img src="img/property1.jpg"
+                         alt="PG Property">
+
+                </div>
+
+
+                <!-- Property Details -->
+
+                <div class="property-details">
+
+                    <div class="property-rating">
+                        ★ ★ ★ ★ ★
+                    </div>
+
+                    <h3>
+                        Ganpati Paying Guest
+                    </h3>
+
+                    <p class="property-address">
+                        Police Beat, Sainath Complex,
+                        Besides, SV Rd, Daulat Nagar,
+                        Borivali East, Mumbai - 400066
+                    </p>
+
+                    <p class="property-gender">
+                        ♀ ♂
+                    </p>
+
+                    <div class="property-rent">
+
+                        <strong>
+                            Rs 8,500/-
+                        </strong>
+
+                        <span>
+                            per month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Interested -->
+
+                <div class="property-interest">
+
+                    <div class="heart">
+                        ♥
+                    </div>
+
+                    <p>
+                        6 interested
+                    </p>
+
+                </div>
+
+
+                <!-- View Button -->
+
+                <div class="property-action">
+
+                    <a href="property_detail.html"
+                       class="btn view-btn">
+
+                        View
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="dashboard-footer">
+
+        <div class="container">
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    PG in Delhi
+                </a>
+
+                <a href="property_list.html">
+                    PG in Mumbai
+                </a>
+
+                <a href="#">
+                    PG in Bangalore
+                </a>
+
+                <a href="#">
+                    PG in Hyderabad
+                </a>
+
+            </div>
+
+            <p>
+                © 2026 PG Life. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
