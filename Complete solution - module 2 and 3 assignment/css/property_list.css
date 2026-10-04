@@ -1,40 +1,31 @@
-@media (max-width: 768px) {
-    .profile-img-container {
-        text-align: center;
-        padding-bottom: 32px;
-    }
-}
-
-.profile-img {
-    color: #7d7d7d;
-    font-size: 75px;
-    text-align: center;
-    border: 1px solid #e4e4e4;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    line-height: 100px;
-}
-
-.profile .name {
-    font-weight: bold;
-}
-
-.edit-profile {
-    font-size: 10px;
-    text-decoration: underline;
+.filter-bar > div {
     cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
-.my-interested-properties {
-    background-color: #fcfaf7;
+.filter-bar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #646870;
+    padding: 6px;
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .filter-bar img {
+        display: block;
+        margin: 0px auto 4px;
+    }
 }
 
 .property-card {
     background-color: #ffffff;
     border-radius: 2px;
     padding: 15px 0px;
-    margin: 20px auto;
+    margin: 0px auto 20px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -66,7 +57,6 @@
 
 .interested-container {
     text-align: center;
-    padding: 8px 16px;
 }
 
 .interested-container i {
@@ -119,4 +109,46 @@
     border-radius: 0px;
     width: 140px;
     float: right;
+}
+
+/* No Property */
+.no-property-container {
+    margin: 96px auto 144px;
+}
+
+.no-property-container p {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Filter Modal */
+#filter-modal .modal-dialog {
+    max-width: 600px;
+}
+
+#filter-modal .modal-body h5 {
+    color: #777777;
+}
+
+#filter-modal .modal-body hr {
+    margin: 4px 0px;
+}
+
+#filter-modal .modal-body button {
+    font-size: 14px;
+    width: 100px;
+    margin: 16px;
+}
+
+#filter-modal .modal-body .btn-active {
+    color: #fff;
+    background-color: #343a40;
+}
+
+#filter-modal .modal-body button i {
+    margin-right: 8px;
+}
+
+#filter-modal .modal-footer button {
+    width: 120px;
 }
